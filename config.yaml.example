@@ -1,0 +1,44 @@
+# Example configuration file for Bastet Node
+# Copy this to config.yaml or config.local.yaml and configure for your environment
+
+server:
+  # Console server URL
+  url: "https://console.bastet.example.com"
+  # API endpoint for check-ins
+  checkin_endpoint: "/api/v1/node/checkin"
+  # API endpoint for task results
+  results_endpoint: "/api/v1/node/results"
+  # Connection timeout in seconds
+  timeout: 30
+
+node:
+  # Unique identifier for this node (auto-generated if not set)
+  id: ""
+  # Node name for identification
+  name: "bastet-node-1"
+  # Check-in interval in seconds
+  checkin_interval: 60
+  # Maximum number of concurrent tasks
+  max_concurrent_tasks: 5
+
+authentication:
+  # API key or token for authentication
+  api_key: ""
+  # Alternative: use bearer token
+  bearer_token: ""
+
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: "INFO"
+  # Log file path (leave empty for console only)
+  file: "logs/bastet-node.log"
+  # Maximum log file size in MB
+  max_size_mb: 10
+  # Number of backup log files to keep
+  backup_count: 5
+
+security:
+  # Enable SSL certificate verification
+  verify_ssl: true
+  # Path to custom CA certificate (optional)
+  ca_cert: ""
