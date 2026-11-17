@@ -197,7 +197,11 @@ flake8 bastet_node/
 
 ## License
 
-MIT License - see LICENSE file for details
+Copyright (c) 2024 Bastet AI.
+
+Original Bastet project code and documentation are licensed under the [Apache License 2.0](LICENSE). Third-party dependencies, container images, submodules, imported program data, and other third-party materials retain their respective licenses and notices; they are not relicensed by this grant.
+
+Versions previously distributed under MIT remain available under that grant; this change does not revoke earlier permissions.
 
 ## Support
 
